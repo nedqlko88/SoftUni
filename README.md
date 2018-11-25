@@ -1,2 +1,2 @@
 # SOFTUNI
-Excersices and Homeworks
+Exercises and Homeworks
