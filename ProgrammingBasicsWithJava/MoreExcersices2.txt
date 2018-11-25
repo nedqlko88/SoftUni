@@ -1,0 +1,257 @@
+// BAKERY
+
+import java.util.Scanner;
+
+public class Bakery {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int beginDough = Integer.parseInt(scanner.nextLine());
+        int m = Integer.parseInt(scanner.nextLine());
+        double p = Double.parseDouble(scanner.nextLine());
+        int b = Integer.parseInt(scanner.nextLine());
+        int s = Integer.parseInt(scanner.nextLine());
+
+        double dailyIncomes = b * p;
+        double neededDough = b * m;
+        double outcomeDoughPrice = (beginDough + neededDough) / 250;
+        double sweetPrice = p + (p * 0.25);
+        double sweetWeight = m - (m * 0.2);
+        double sweetDough = s * sweetWeight;
+        double sweetIncome = s * sweetPrice;
+        double finalIncome = (dailyIncomes + sweetIncome) - outcomeDoughPrice;
+        double finalDough = neededDough + sweetDough;
+
+        System.out.printf("Pure income: %.2f lv.", finalIncome);
+        System.out.println();
+        System.out.printf("Dough used: %.0f g.", Math.ceil(finalDough));
+    }
+}
+
+
+// AIRPLANE
+
+import java.util.Scanner;
+
+public class Airplane {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int h = Integer.parseInt(scanner.nextLine());
+        int m = Integer.parseInt(scanner.nextLine());
+        int t = Integer.parseInt(scanner.nextLine());
+
+        int sum = m + t;
+        int hoursToAdd = sum / 60;
+        int minutesToAdd = sum % 60;
+
+        int totalHours = h + hoursToAdd;
+
+        if(totalHours == 24){
+            totalHours = 0;
+        }
+        if(totalHours > 24){
+            totalHours = totalHours - 24;
+        }
+        System.out.printf("%dh %dm", totalHours, minutesToAdd);
+    }
+}
+
+
+//AQUAPARK
+
+import java.util.Scanner;
+
+public class Aquapark {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String month = scanner.nextLine();
+        month = month.toLowerCase();
+        int countHours = Integer.parseInt(scanner.nextLine());
+        int countPeople = Integer.parseInt(scanner.nextLine());
+        String timeOfDay = scanner.nextLine();
+        timeOfDay = timeOfDay.toLowerCase();
+
+        double price = 0.0;
+        if(month.equals("march") || month.equals("april") || month.equals("may")){
+
+            if(timeOfDay.equals("day")){
+                price = 10.50;
+            }else{
+                price = 8.4;
+            }
+        }else if(month.equals("june") || month.equals("july") || month.equals("august")){
+            if(timeOfDay.equals("day")){
+                price = 12.60;
+            }else{
+                price = 10.20;
+            }
+        }
+
+
+
+        if(countPeople > 4){
+            price -= price * 0.1;
+        }
+        if(countHours >= 5){
+            price -= price * 0.5;
+        }
+        double totalPrice = (countHours * price) * countPeople;
+
+        System.out.printf("Price per person for one hour: %.2f", price);
+        System.out.println();
+        System.out.printf("Total cost of the visit: %.2f", totalPrice);
+    }
+}
+
+
+//SALARY
+
+import java.util.Scanner;
+
+public class Salary {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double baseSalary = Double.parseDouble(scanner.nextLine());
+        int timeService = Integer.parseInt(scanner.nextLine());
+        String syndicate = scanner.nextLine();
+
+        double currentSalary = baseSalary;
+        int year;
+        for (year = 1; year <= timeService; year++) {
+            currentSalary = currentSalary * 1.06;
+            if (year % 10 == 5) {
+                currentSalary += 100;
+            } else if (year % 10 == 0) {
+                currentSalary += 200;
+            }
+            if (syndicate.equals("Yes") && (year % 10 != 5 || year % 10 != 0)) {
+                currentSalary = currentSalary * 0.99;
+            }
+        }
+        if (currentSalary >= 5000) {
+            System.out.printf("Current salary: 5000.00%n");
+            System.out.printf("0 more years to max salary.%n");
+        } else if (currentSalary < 5000) {
+            double toMaxSalary = currentSalary;
+            while (toMaxSalary < 5000) {
+                toMaxSalary = toMaxSalary * 1.06;
+                if (year % 10 == 5) {
+                    toMaxSalary += 100;
+                } else if (year % 10 == 0) {
+                    toMaxSalary += 200;
+                }
+                if (syndicate.equals("Yes") && (year % 10 != 5 || year % 10 != 0)) {
+                    toMaxSalary = toMaxSalary * 0.99;
+                }
+                year++;
+            }
+            System.out.printf("Current salary: %.2f%n", currentSalary);
+            System.out.printf("%d more years to max salary.%n", year - 2 - timeService);
+        }
+    }
+}
+
+
+//BUTTTERFLY
+
+import java.util.Scanner;
+
+public class Butterfly {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num = Integer.parseInt(scanner.nextLine());
+
+        int width = (4 * num) - 4;
+        int spaces = width - 4;
+        int starsAndPipesCount = 1;
+
+        for (int i = 0; i < num - 2; i++) {
+            System.out.println(repeatString("*\\", starsAndPipesCount)
+                    + repeatString(" ", spaces)
+                    + repeatString("/*", starsAndPipesCount));
+            spaces -= 4;
+            starsAndPipesCount++;
+        }
+
+        System.out.println(repeatString("\\/", width / 2));
+
+        int countCh = (width - 6) / 2;
+        for (int i = 0; i < num / 2; i++) {
+
+            System.out.println(repeatString("<", countCh)
+                    + "*|**|*"
+                    + repeatString(">", countCh));
+        }
+
+        System.out.println(repeatString("/\\", width / 2));
+
+        spaces += 4;
+        starsAndPipesCount --;
+        for (int i = 0; i < num - 2; i++) {
+            System.out.println(repeatString("*/", starsAndPipesCount)
+                    + repeatString(" ", spaces)
+                    + repeatString("\\*", starsAndPipesCount));
+            spaces += 4;
+            starsAndPipesCount--;
+        }
+    }
+
+    public static String repeatString(String text, int times) {
+        StringBuilder result = new StringBuilder();
+
+        while (times > 0) {
+            result.append(text);
+
+            times--;
+        }
+
+        return result.toString();
+    }
+}
+
+
+//JUICEDIET
+
+import java.util.Scanner;
+
+public class JuiceDiet {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int r = Integer.parseInt(scanner.nextLine());
+        int s = Integer.parseInt(scanner.nextLine());
+        int c = Integer.parseInt(scanner.nextLine());
+        int juiceMax = Integer.parseInt(scanner.nextLine());
+
+        int maxRasp = 0;
+        int maxStraw = 0;
+        int maxCherries = 0;
+        double juiceTotal = 0.0;
+
+        for (int i = 0; i <= c; i++) {
+            for (int j = 0; j <= s; j++) {
+                for (int k = 0; k <= r; k++) {
+                    double cherries = 15 * i;
+                    double strawberries = 7.5 * j;
+                    double raspberries = 4.5 * k;
+                    double juiceCurrent = cherries + strawberries + raspberries;
+                    if (juiceCurrent <= juiceMax)
+                    {
+                        if (juiceCurrent > juiceTotal)
+                        {
+                            juiceTotal = juiceCurrent;
+                        }
+                        if (juiceCurrent>=juiceTotal)
+                        {
+                            maxCherries = i;
+                            maxStraw = j;
+                            maxRasp = k;
+                        }
+                    }
+                }
+            }
+        }
+        System.out.printf("%d Raspberries, %d Strawberries, %d Cherries. Juice: %s ml.", maxRasp, maxStraw, maxCherries, juiceTotal);
+
+    }
+}

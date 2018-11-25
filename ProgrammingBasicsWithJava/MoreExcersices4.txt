@@ -1,0 +1,190 @@
+//BANK NUMBER
+
+import java.util.Scanner;
+
+public class BankNumber{
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+
+        int a = Integer.parseInt(scanner.nextLine());
+        char b = scanner.nextLine().charAt(0);
+        char c = scanner.nextLine().charAt(0);
+        char d = scanner.nextLine().charAt(0);
+        int e = Integer.parseInt(scanner.nextLine());
+        int max = Integer.parseInt(scanner.nextLine());
+
+        int count = 0;
+        for (int i = a; i <= 99 ; i++) {
+            for (char j = b; j <= 'Z' ; j++) {
+                for (char k = c; k <= 'z'; k++) {
+                    for (char l = d; l <= 'Z' ; l++) {
+                        for (int m = e; m >= 10 ; m--) {
+                            String result = "" + i + j + k + l + m;
+
+                            if(i % 10 == 2 && m % 10 == 5){
+                                count++;
+                            }
+                            if(count == max){
+                                System.out.println(result);
+                                return;
+                            }
+
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+
+
+    }
+
+}
+
+
+//MAGIC NUMBERS
+
+package Figures;
+
+import java.util.Scanner;
+
+public class MagicNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = Integer.parseInt(scanner.nextLine());
+
+        for (int firstDigit = 1; firstDigit <= 9; firstDigit++) {
+            for (int secondDigit = 1; secondDigit <= 9 ; secondDigit++) {
+                for (int thirdDigit = 1; thirdDigit <= 9; thirdDigit++) {
+                    for (int fourthDigit = 1; fourthDigit <= 9; fourthDigit++) {
+                        for (int fifthDigit = 1; fifthDigit <= 9 ; fifthDigit++) {
+                            for (int sixthDigit = 1; sixthDigit <= 9 ; sixthDigit++) {
+
+                                int multiply = firstDigit * secondDigit * thirdDigit * fourthDigit * fifthDigit * sixthDigit;
+                                if(multiply == n){
+                                    System.out.printf("%d%d%d%d%d%d ", firstDigit, secondDigit, thirdDigit, fourthDigit, fifthDigit, sixthDigit);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//SPECIAL NUMBERS
+
+package Figures;
+
+import java.util.Scanner;
+
+public class SpecialNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = Integer.parseInt(scanner.nextLine());
+
+        for (int firstDigit = 1; firstDigit <= 9 ; firstDigit++) {
+            for (int secondDigit = 1; secondDigit <= 9 ; secondDigit++) {
+                for (int thirdDigit = 1; thirdDigit <= 9 ; thirdDigit++) {
+                    for (int fourthDigit = 1; fourthDigit <= 9 ; fourthDigit++) {
+                        if(n % firstDigit == 0 && n % secondDigit == 0
+                                && n % thirdDigit == 0 && n % fourthDigit == 0){
+                            System.out.printf("%d%d%d%d ", firstDigit, secondDigit, thirdDigit, fourthDigit);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//SONG OF WHEELS
+
+package Figures;
+
+import java.util.Scanner;
+
+public class SongOfWheels {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int controlNum = Integer.parseInt(scanner.nextLine());
+
+        int countCurrentNum = 0;
+        String password = "";
+        for (int a = 1; a <= 9; a++) {
+            for (int b = 1; b <= 9 ; b++) {
+                for (int c = 1; c <= 9; c++) {
+                    for (int d = 1; d <= 9; d++) {
+                        if((a * b) + (c * d) == controlNum
+                                && a < b
+                                && c > d){
+                            System.out.printf("%d%d%d%d ", a,b,c,d);
+                            countCurrentNum++;
+
+                                if (countCurrentNum == 4){
+                                  password = "" + a + b + c + d;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            if(password.equals("")){
+                System.out.println();
+                System.out.println("No!");
+            }else{
+                System.out.println();
+                System.out.println("Password: " + password);
+            }
+        }
+    }
+
+
+//PRIME PAIRS
+
+package Figures;
+
+import java.util.Scanner;
+
+public class PrimePairs {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int startFirstPair = Integer.parseInt(scanner.nextLine());
+        int startSecondPair = Integer.parseInt(scanner.nextLine());
+        int firstPairAdd = Integer.parseInt(scanner.nextLine());
+        int secondPairAdd = Integer.parseInt(scanner.nextLine());
+
+        int firstPairEnd = startFirstPair + firstPairAdd;
+        int secondPairEnd = startSecondPair + secondPairAdd;
+        for (int pairOne = startFirstPair; pairOne <= firstPairEnd; pairOne++) {
+            for (int pairTwo = startSecondPair; pairTwo <= secondPairEnd; pairTwo++) {
+                boolean isPrimeFirstPair = true;
+                for (int i = 2; i <= Math.sqrt(pairOne); i++) {
+                    if (pairOne % i == 0) {
+                        isPrimeFirstPair = false;
+                        break;
+                    }
+                }
+                boolean isPrimeSecondPair = true;
+                for (int j = 2; j <= Math.sqrt(pairTwo); j++) {
+                    if (pairTwo % j == 0) {
+                        isPrimeSecondPair = false;
+                        break;
+                    }
+                }
+
+                if(isPrimeFirstPair && isPrimeSecondPair){
+                    System.out.printf("%d%d%n", pairOne, pairTwo);
+                }
+            }
+        }
+    }
+}

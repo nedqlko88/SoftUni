@@ -1,0 +1,322 @@
+
+//CHANGE
+
+import java.util.Scanner;
+ 
+public class P06Change {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double change = Double.parseDouble(scanner.nextLine());
+        int coinCount = 0;
+ 
+        int levs = (int) change;
+ 
+        int stotinki = (int) (change * 100) % 100;
+ 
+        if (levs % 2 == 1) {
+            coinCount += 1;
+        }
+ 
+        levs = levs / 2;
+        coinCount += levs;
+ 
+        if (stotinki / 50 == 1) {
+            coinCount += 1;
+            stotinki -= 50;
+        }
+ 
+        while (stotinki / 20 > 0) {
+            coinCount++;
+            stotinki -= 20;
+        }
+ 
+        if (stotinki / 10 == 1) {
+            coinCount += 1;
+            stotinki -= 10;
+        }
+ 
+        if (stotinki / 5 == 1) {
+            coinCount += 1;
+            stotinki -= 5;
+        }
+ 
+        while (stotinki / 2 > 0) {
+            coinCount++;
+            stotinki -= 2;
+        }
+ 
+        if (stotinki == 1) {
+            coinCount += 1;
+        }
+ 
+        System.out.println(coinCount);
+    }
+}
+
+
+
+
+//SPECIAL COMBINATION
+
+import java.util.Scanner;
+
+public class P06SpecialCombinations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int hundredEnd = Integer.parseInt(scanner.nextLine());
+        int tenEnd = Integer.parseInt(scanner.nextLine());
+        int oneEnd = Integer.parseInt(scanner.nextLine());
+
+        for (int i = 1; i <= hundredEnd; i++) {
+            if (i % 2 == 1) {
+                continue;
+            }
+            for (int j = 1; j <= tenEnd; j++) {
+                boolean isPrime = checkIsPrime(j);
+                boolean inRange = 2 <= j && j <= 7;
+                if (!isPrime || !inRange) {
+                    continue;
+                }
+                for (int k = 1; k <= oneEnd; k++) {
+                    if (k % 2 == 1) {
+                        continue;
+                    }
+
+                    System.out.printf("%d %d %d%n", i, j, k);
+                }
+
+            }
+        }
+    }
+
+    public static boolean checkIsPrime(int number) {
+        boolean isPrime = true;
+
+        if (number < 2) {
+            isPrime = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        return isPrime;
+    }
+}
+
+//ASCII COMBINATION
+
+import java.util.Scanner;
+
+public class P04ASCIICombinations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int symbolsCount = Integer.parseInt(scanner.nextLine());
+
+        int sumDigits = 0;
+        int sumCapitalLetters = 0;
+        int sumSmallLetters = 0;
+        int sumOtherSymbols = 0;
+        int max = 0;
+        String digits = "";
+        String capitals = "";
+        String smalls = "";
+        String others = "";
+        String output = "";
+
+        for (int i = 0; i < symbolsCount; i++) {
+            char symbol = scanner.nextLine().charAt(0);
+
+            if ('0' <= symbol && symbol <= '9') {
+                sumDigits += symbol;
+                digits += symbol;
+                if (sumDigits > max) {
+                    max = sumDigits;
+                    output = digits;
+                }
+            } else if ('A' <= symbol && symbol <= 'Z') {
+                sumCapitalLetters += symbol;
+                capitals += symbol;
+                if (sumCapitalLetters > max) {
+                    max = sumCapitalLetters;
+                    output = capitals;
+                }
+            } else if ('a' <= symbol && symbol <= 'z') {
+                sumSmallLetters += symbol;
+                smalls += symbol;
+                if (sumSmallLetters > max) {
+                    max = sumSmallLetters;
+                    output = smalls;
+                }
+            } else {
+                sumOtherSymbols += symbol;
+                others += symbol;
+                if (sumOtherSymbols > max) {
+                    max = sumOtherSymbols;
+                    output = others;
+                }
+            }
+        }
+
+        System.out.printf("Biggest ASCII sum is:%d%n", max);
+        System.out.printf("Combination of characters is:%s", output);
+    }
+}
+
+
+
+//BALLS
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class P04Balls {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int ballCounts = Integer.parseInt(scanner.nextLine());
+        //DecimalFormat df = new DecimalFormat("#.#############");
+
+        //double totalPoints = 0;
+        int totalPoints = 0;
+        int redBallCounts = 0;
+        int orangeBallCounts = 0;
+        int yellowBallCounts = 0;
+        int whiteBallCounts = 0;
+        int blackBallCounts = 0;
+        int otherBallCounts = 0;
+
+        for (int i = 0; i < ballCounts; i++) {
+            String ballColor = scanner.nextLine();
+
+            switch (ballColor.toLowerCase()) {
+                case "red":
+                    redBallCounts++;
+                    totalPoints += 5;
+                    break;
+                case "orange":
+                    orangeBallCounts++;
+                    totalPoints += 10;
+                    break;
+                case "yellow":
+                    yellowBallCounts++;
+                    totalPoints += 15;
+                    break;
+                case "white":
+                    whiteBallCounts++;
+                    totalPoints += 20;
+                    break;
+                case "black":
+                    //totalPoints /= 2.0;
+                    totalPoints /= 2;
+                    blackBallCounts++;
+                    break;
+                default:
+                    otherBallCounts++;
+                    break;
+            }
+        }
+
+        //System.out.printf("Total points: %s%n", df.format(totalPoints));
+        System.out.printf("Total points: %s%n", totalPoints);
+        System.out.printf("Points from red balls: %d%n", redBallCounts);
+        System.out.printf("Points from orange balls: %d%n", orangeBallCounts);
+        System.out.printf("Points from yellow balls: %d%n", yellowBallCounts);
+        System.out.printf("Points from white balls: %d%n", whiteBallCounts);
+        System.out.printf("Other colors picked: %d%n", otherBallCounts);
+        System.out.printf("Divides from black balls: %d%n", blackBallCounts);
+    }
+}
+
+
+
+
+//RATE
+
+import java.util.Scanner;
+
+public class P04Rate {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double amount = Double.parseDouble(scanner.nextLine());
+        int monthsCount = Integer.parseInt(scanner.nextLine());
+
+        double amountSimpleRate = amount;
+        double amountComplexRate = amount;
+
+        for (int i = 0; i < monthsCount; i++) {
+            double monthAmountToAddSimpleRate = amount * 3.0 / 100;
+            amountSimpleRate += monthAmountToAddSimpleRate;
+
+            double currentMonthToAddComplexRate = amountComplexRate * 2.7 / 100;
+            amountComplexRate += currentMonthToAddComplexRate;
+        }
+
+        System.out.printf("Simple interest rate: %.2f lv.%n", amountSimpleRate);
+        System.out.printf("Complex interest rate: %.2f lv.%n", amountComplexRate);
+
+        if (amountSimpleRate > amountComplexRate) {
+            System.out.printf("Choose a simple interest rate. You will win %.2f lv.%n",
+                    amountSimpleRate - amountComplexRate);
+        } else {
+            System.out.printf("Choose a complex interest rate. You will win %.2f lv.%n",
+                    amountComplexRate - amountSimpleRate);
+        }
+    }
+}
+
+
+
+//PRIME PAIRS
+
+import java.util.Scanner;
+
+public class P06PrimePairs {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int firstPairStart = Integer.parseInt(scanner.nextLine());
+        int secondPairStart = Integer.parseInt(scanner.nextLine());
+        int firstPairEnd = Integer.parseInt(scanner.nextLine());
+        int secondPairEnd = Integer.parseInt(scanner.nextLine());
+
+        firstPairEnd += firstPairStart;
+        secondPairEnd += secondPairStart;
+
+        for (int i = firstPairStart; i <= firstPairEnd; i++) {
+            boolean isPrimeFirst = checkIsPrime(i);
+            if (!isPrimeFirst) {
+                continue;
+            }
+            for (int j = secondPairStart; j <= secondPairEnd; j++) {
+                boolean isPrimeSecond = checkIsPrime(j);
+
+                if (isPrimeSecond) {
+                    System.out.printf("%d%d%n", i, j);
+                }
+            }
+        }
+
+    }
+
+    public static boolean checkIsPrime(int number) {
+        boolean isPrime = true;
+
+        if (number < 2) {
+            isPrime = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        return isPrime;
+    }
+}
+
+

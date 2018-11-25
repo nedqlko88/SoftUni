@@ -1,0 +1,274 @@
+//PROFIT	
+
+import java.util.Scanner;
+ 
+public class Profit {
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+        int workDays = Integer.parseInt(scanner.nextLine());
+        double moneyPerDay = Double.parseDouble(scanner.nextLine());
+        double course = Double.parseDouble(scanner.nextLine());
+ 
+        double salaryPerMonth = workDays * moneyPerDay;
+        double moneyPerYear = 12 * salaryPerMonth + 2.5 * salaryPerMonth;
+        double taxes = 0.25 * moneyPerYear;
+        double totalSalaryInDollars = moneyPerYear - taxes;
+        double totalSalaryInLeva = totalSalaryInDollars * course;
+        double salaryPerDay = totalSalaryInLeva / 365;
+ 
+        System.out.printf("%.2f",salaryPerDay);
+ 
+    }
+}
+
+
+
+//STYROFOAM
+
+import java.util.Scanner;
+
+public class Styrofoam {
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+
+        double budget = Double.parseDouble(scanner.nextLine());
+        double area = Double.parseDouble(scanner.nextLine());
+        int windows = Integer.parseInt(scanner.nextLine());
+        double packageArea = Double.parseDouble(scanner.nextLine());
+        double packagePrice = Double.parseDouble(scanner.nextLine());
+
+
+        double clearArea = area - windows * 2.4;
+        double totalArea = 0.10 * clearArea + clearArea;
+        double packages = Math.ceil(totalArea / packageArea);
+        double price = packages * packagePrice;
+
+        if (price <= budget) {
+            System.out.printf("Spent: %.2f%n", price);
+            System.out.printf("Left: %.2f", budget - price);
+
+        } else {
+            System.out.printf("Need more: %.2f", price - budget);
+
+        }
+
+    }
+}
+
+
+//FLOWERS
+
+import java.util.Scanner;
+
+public class Flowers {
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+
+        int chrysanthemums = Integer.parseInt(scanner.nextLine());
+        int roses = Integer.parseInt(scanner.nextLine());
+        int tulips = Integer.parseInt(scanner.nextLine());
+        String season = scanner.nextLine();
+        char day = scanner.nextLine().charAt(0);
+        double price = 0;
+
+
+        if(season.equals("Spring") || season.equals("Summer")){
+             price = chrysanthemums * 2.00 + roses * 4.10 + tulips * 2.50;
+        }else if (season.equals("Autumn") || season.equals("Winter")){
+            price = chrysanthemums * 3.75 + roses * 4.50 + tulips * 4.15;
+        }
+
+        if(day == 'Y'){
+            price = 0.15 * price + price;
+        }
+
+        if(tulips > 7 && season.equals("Spring")){
+            price = price - 0.05 * price;
+        }
+        if(roses >= 10 && season.equals("Winter")){
+            price = price - 0.10 * price;
+        }
+        int totalFlowers = chrysanthemums + roses + tulips;
+
+        if(totalFlowers > 20){
+            price = price - 0.2 * price;
+        }
+        double totalPrice = price + 2;
+
+        System.out.printf("%.2f", totalPrice);
+    }
+}
+
+
+//GRADES
+
+import java.util.Scanner;
+public class Grades {
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+
+        int students = Integer.parseInt(scanner.nextLine());
+        int countPoor = 0;
+        int countMiddle = 0;
+        int countGood = 0;
+        int countExcellent = 0;
+        double total = 0;
+
+        for (int i = 1; i <= students; i++) {
+            double grade = Double.parseDouble(scanner.nextLine());
+
+            if (grade >= 2 && grade <= 2.99) {
+                countPoor++;
+            } else if (grade >= 3 && grade <= 3.99) {
+                countMiddle++;
+            } else if (grade >= 4 && grade <= 4.99){
+                countGood++;
+            } else if (grade >= 5 ){
+                countExcellent++;
+            }
+            total += grade;
+
+        }
+        System.out.printf("Top students: %.2f%%%n", (countExcellent / (students * 1.0)) * 100);
+        System.out.printf("Between 4.00 and 4.99: %.2f%%%n", (countGood / (students * 1.0)) * 100);
+        System.out.printf("Between 3.00 and 3.99: %.2f%%%n", (countMiddle / (students * 1.0)) * 100);
+        System.out.printf("Fail: %.2f%%%n", (countPoor / (students * 1.0)) * 100);
+        System.out.printf("Average: %.2f", total / students);
+
+
+    }
+}
+
+//ROCKET
+
+import java.util.Scanner;
+
+public class Rocket {
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+
+        int n = Integer.parseInt(scanner.nextLine());
+
+        for (int i = 0; i < n; i++) {
+            String upPart = repeatStr(".", n / 2 + n - 1 - i)
+                    + "/" + repeatStr(" ", 2 * i) + "\\"
+                    + repeatStr(".", n / 2 + n - 1 - i);
+            System.out.println(upPart);
+        }
+        String middle = repeatStr(".", n / 2)
+                + repeatStr("*", 2 * n)
+                + repeatStr(".", n / 2);
+        System.out.println(middle);
+
+        for (int i = 0; i < 2 * n ; i++) {
+            String secondMiddle = repeatStr(".", n / 2)
+                    + "|"
+                    + repeatStr("\\", 2 * n - 2)
+                    + "|"
+                    + repeatStr(".", n / 2);
+            System.out.println(secondMiddle);
+        }
+
+        for (int i = 0; i < n / 2 ; i++) {
+            String bottom = repeatStr(".", n / 2 - i)
+                    + "/"
+                    + repeatStr("*", 2 * n - 2 + 2 * i)
+                    + "\\"
+                    + repeatStr(".", n / 2 - i);
+            System.out.println(bottom);
+
+        }
+
+    }
+    static String repeatStr(String text, int count) {
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < count; i++) {
+            result.append(text);
+
+        }
+        return result.toString();
+    }
+}
+
+//LETTERS
+
+import java.util.Scanner;
+
+public class Letters {
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+
+        char start = scanner.nextLine().charAt(0);
+        char finish = scanner.nextLine().charAt(0);
+        char skipLetter = scanner.nextLine().charAt(0);
+        int counter = 0;
+
+        for (char first = start; first <= finish; first++) {
+            for (char second = start; second <= finish; second++) {
+                for (char third = start; third <= finish; third++) {
+
+                    String result = "" + first + second + third;
+                    String skip = "" + skipLetter;
+
+                    if(!result.contains(skip)){
+                        System.out.print(result + " ");
+                        counter++;
+                    }
+
+                }
+
+            }
+
+        }
+        System.out.println(counter);
+
+    }
+}
+
+
+//BANKNUMBER
+
+import java.util.Scanner;
+
+public class BankNumber{
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+
+        int a = Integer.parseInt(scanner.nextLine());
+        char b = scanner.nextLine().charAt(0);
+        char c = scanner.nextLine().charAt(0);
+        char d = scanner.nextLine().charAt(0);
+        int e = Integer.parseInt(scanner.nextLine());
+        int max = Integer.parseInt(scanner.nextLine());
+
+        int count = 0;
+        for (int i = a; i <= 99 ; i++) {
+            for (char j = b; j <= 'Z' ; j++) {
+                for (char k = c; k <= 'z'; k++) {
+                    for (char l = d; l <= 'Z' ; l++) {
+                        for (int m = e; m >= 10 ; m--) {
+                            String result = "" + i + j + k + l + m;
+
+                            if(i % 10 == 2 && m % 10 == 5){
+                                count++;
+                            }
+                            if(count == max){
+                                System.out.println(result);
+                                return;
+                            }
+
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+
+
+    }
+
+}
