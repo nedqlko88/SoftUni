@@ -1,8 +1,9 @@
-package com.minkov;
+package com.ned;
 
-import com.minkov.db.EntityDbContext;
-import com.minkov.db.base.DbContext;
-import com.minkov.entities.User;
+import com.ned.db.EntityDbContext;
+import com.ned.db.base.DbContext;
+import com.ned.entities.Department;
+import com.ned.entities.User;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,14 +19,33 @@ public class App {
         DbContext<User> usersDbContext =
                 getDbContext(connection, User.class);
 
+        DbContext<Department> departmentDbContext =
+                getDbContext(connection, Department.class);
+
+        User user = new User("Pesho", "Peshev");
+        user.setAge(25);
+        user.setUcn("1234567890");
+
+        User pena = new User("Pena", "Penewa");
+
+//        usersDbContext.persist(user);
+        usersDbContext.persist(pena);
+
+//        usersDbContext.delete("first_name LIKE ('P%')");
+
+//        User pesho = usersDbContext.findById(1);
+//        pesho.setLastName("PESHEV");
+//
+//        usersDbContext.persist(pesho);
+//
 //        usersDbContext.find()
 //                .forEach(System.out::println);
-        User user = usersDbContext.findFirst();
-        System.out.println(user);
+//        User user = usersDbContext.findFirst();
+//        System.out.println(user);
 //        user.setLastName("Wse taq");S
 //
 //        usersDbContext.persist(user);
-        //        DbContext<Department> departmentDbContext
+//                DbContext<Department> departmentDbContext
 //                = getDbContext(connection, Department.class);
 //        departmentDbContext.find()
 //                .forEach(System.out::println);
@@ -33,7 +53,7 @@ public class App {
         connection.close();
     }
 
-    private static <T> DbContext<T> getDbContext(Connection connection, Class<T> klass) {
+    private static <T> DbContext<T> getDbContext(Connection connection, Class<T> klass) throws SQLException {
         return new EntityDbContext<>(connection, klass);
     }
 
@@ -41,7 +61,7 @@ public class App {
         return DriverManager.getConnection(
                 CONNECTION_STRING,
                 "root",
-                "881223"
+                "12345"
         );
     }
 }

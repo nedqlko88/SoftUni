@@ -1,4 +1,4 @@
-package com.minkov.db.base;
+package com.ned.db.base;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -16,4 +16,6 @@ public interface DbContext<T> {
     T findFirst(String where) throws SQLException, IllegalAccessException, InstantiationException;
 
     T findById(long id) throws IllegalAccessException, SQLException, InstantiationException;
+
+    boolean delete(String where) throws SQLException;
 }

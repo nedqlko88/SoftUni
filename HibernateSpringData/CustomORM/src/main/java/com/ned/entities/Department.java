@@ -1,16 +1,19 @@
-package com.minkov.entities;
+package com.ned.entities;
 
-import com.minkov.db.annotations.Column;
-import com.minkov.db.annotations.Entity;
-import com.minkov.db.annotations.PrimaryKey;
+import com.ned.db.annotations.Column;
+import com.ned.db.annotations.Entity;
+import com.ned.db.annotations.PrimaryKey;
 
 @Entity(name = "departments")
 public class Department {
     @PrimaryKey(name = "id")
-    long id;
+    private long id;
 
     @Column(name = "name")
-    String name;
+    private String name;
+
+    @Column(name = "company_name")
+    private String company;
 
     public long getId() {
         return id;
@@ -26,6 +29,14 @@ public class Department {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.minkov.db.annotations;
+package com.ned.db.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

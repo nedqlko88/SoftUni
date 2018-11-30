@@ -1,8 +1,8 @@
-package com.minkov.entities;
+package com.ned.entities;
 
-import com.minkov.db.annotations.Column;
-import com.minkov.db.annotations.Entity;
-import com.minkov.db.annotations.PrimaryKey;
+import com.ned.db.annotations.Column;
+import com.ned.db.annotations.Entity;
+import com.ned.db.annotations.PrimaryKey;
 
 @Entity(name = "employees")
 public class User {
@@ -14,6 +14,12 @@ public class User {
 
     @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "age")
+    private int age;
+
+    @Column(name = "ucn")
+    private String ucn;
 
     public User() {
 
@@ -46,6 +52,22 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getUcn() {
+        return ucn;
+    }
+
+    public void setUcn(String ucn) {
+        this.ucn = ucn;
     }
 
     @Override
