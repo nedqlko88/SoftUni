@@ -106,7 +106,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", referencedColumnName = "address_id")
     public Address getAddress() {
         return address;

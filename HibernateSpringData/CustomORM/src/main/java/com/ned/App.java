@@ -8,12 +8,14 @@ import com.ned.entities.User;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class App {
     private static final String CONNECTION_STRING =
             "jdbc:mysql://localhost:3306/soft_uni_simple";
 
     public static void main(String[] args) throws SQLException, IllegalAccessException, InstantiationException, NoSuchFieldException {
+
         Connection connection = getConnection();
 
         DbContext<User> usersDbContext =
@@ -50,7 +52,7 @@ public class App {
 //        departmentDbContext.find()
 //                .forEach(System.out::println);
 
-        connection.close();
+//        connection.close();
     }
 
     private static <T> DbContext<T> getDbContext(Connection connection, Class<T> klass) throws SQLException {
@@ -58,10 +60,13 @@ public class App {
     }
 
     private static Connection getConnection() throws SQLException {
+        Properties props = new Properties();
+        props.setProperty("user", "root");
+        props.setProperty("password", "881223");
+
         return DriverManager.getConnection(
                 CONNECTION_STRING,
-                "root",
-                "12345"
+                props
         );
     }
 }

@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c521946e-6c3d-4e47-8b4e-b198b7c06a56" name="Default Changelist" comment="" />
+    <list default="true" id="f84f3803-0d99-40d4-b6bc-501b2b610850" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeworkhibernate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CustomORM/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CustomORM/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CustomORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CustomORM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CustomORM/src/main/java/com/ned/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CustomORM/src/main/java/com/ned/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Town.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Town.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,26 +28,277 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="softuni: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="b51867ed-9654-4c7f-b678-94094952a702" />
+    </checked>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Address.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+              <folding>
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Town.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/Engine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+              <folding>
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="method#editShorterTowns#0;class#Engine#0" />
+                <element signature="method#containsEmployee#0;class#Engine#0" />
+                <element signature="method#employeesWithHigherSalary#0;class#Engine#0" />
+                <element signature="method#employeesFromDepartment#0;class#Engine#0" />
+                <element signature="method#addingNewAddress#0;class#Engine#0" />
+                <element signature="method#addressEmployeeCount#0;class#Engine#0" />
+                <element signature="method#employeeWithProject#0;class#Engine#0" />
+                <element signature="method#findLatestProjects#0;class#Engine#0" />
+                <element signature="method#increaseSalary#0;class#Engine#0" />
+                <element signature="method#removeTown#0;class#Engine#0" />
+                <element signature="method#findEmployee#0;class#Engine#0" />
+                <element signature="method#maxSalaries#0;class#Engine#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Department.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/addresses">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true">
+                <filter text="32" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/departments">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/employees">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/towns">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>291</find>
+      <find>drift</find>
+      <find>166</find>
+      <find>Kevin</find>
+      <find>kevin</find>
+      <find>32</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/app/entities/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/entities/Address.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b51867ed-9654-4c7f-b678-94094952a702/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/app/Engine.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="width" value="1089" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="homeworkhibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Introduction-to-Hibernate-Skeleton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homeworkhibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Introduction-to-Hibernate-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homeworkhibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Introduction-to-Hibernate-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homeworkhibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Introduction-to-Hibernate-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homeworkhibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Introduction-to-Hibernate-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homeworkhibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Introduction-to-Hibernate-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homeworkhibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Introduction-to-Hibernate-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homeworkhibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Introduction-to-Hibernate-Skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543961137292" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,51 +312,82 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.App" />
+      <module name="homeworkhibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="app.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c521946e-6c3d-4e47-8b4e-b198b7c06a56" name="Default Changelist" comment="" />
-      <created>1543937259669</created>
+      <changelist id="f84f3803-0d99-40d4-b6bc-501b2b610850" name="Default Changelist" comment="" />
+      <created>1543937417813</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1543937259669</updated>
-      <workItem from="1543937261368" duration="9000" />
+      <updated>1543937417813</updated>
+      <workItem from="1543937421146" duration="16739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9000" />
+    <option name="totallyTimeSpent" value="16739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
+      <window_info id="Persistence" sideWeight="0.5005417" side_tool="true" weight="0.25" />
       <window_info id="Designer" />
-      <window_info id="UI Designer" />
+      <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16684435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.13006397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Database" visible="true" weight="0.13432837" />
       <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -95,11 +396,301 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="editorHistoryManager">
+    <entry file="uml://DATABASE/b51867ed-9654-4c7f-b678-94094952a702.SCHEMA:softuni">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>b51867ed-9654-4c7f-b678-94094952a702.SCHEMA:softuni</OriginalElement>
+          <nodes>
+            <node x="235.35416666666669" y="580.0">b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees_projects</node>
+            <node x="307.5" y="325.0">b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.projects</node>
+            <node x="271.9791666666667" y="0.0">b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.towns</node>
+            <node x="251.97916666666669" y="124.0">b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.addresses</node>
+            <node x="92.5" y="270.0">b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees</node>
+            <node x="59.979166666666686" y="124.0">b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.departments</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees" target="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.departments">
+              <point x="-65.0" y="-125.0" />
+              <point x="125.0" y="245.0" />
+              <point x="102.97916666666669" y="245.0" />
+              <point x="-43.0" y="48.0" />
+            </edge>
+            <edge source="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.departments" target="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees">
+              <point x="43.0" y="48.0" />
+              <point x="188.97916666666669" y="245.0" />
+              <point x="190.0" y="245.0" />
+              <point x="0.0" y="-125.0" />
+            </edge>
+            <edge source="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees_projects" target="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.projects">
+              <point x="39.99999999999997" y="-36.5" />
+              <point x="355.3541666666667" y="560.0" />
+              <point x="394.0" y="560.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+            <edge source="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.addresses" target="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.towns">
+              <point x="0.0" y="-48.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees" target="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees">
+              <point x="-48.75" y="125.0" />
+              <point x="141.25" y="540.0" />
+              <point x="72.5" y="540.0" />
+              <point x="72.5" y="395.0" />
+              <point x="-97.5" y="-0.0" />
+            </edge>
+            <edge source="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees" target="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.addresses">
+              <point x="65.0" y="-125.0" />
+              <point x="255.0" y="245.0" />
+              <point x="347.9791666666667" y="245.0" />
+              <point x="0.0" y="48.0" />
+            </edge>
+            <edge source="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees_projects" target="b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.employees">
+              <point x="-40.00000000000003" y="-36.5" />
+              <point x="275.3541666666667" y="560.0" />
+              <point x="238.75" y="560.0" />
+              <point x="48.75" y="125.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0439821693907878" x="-100.67469995135849" y="209.8889837745516" />
+          <SelectedNodes>
+            <node>b51867ed-9654-4c7f-b678-94094952a702.TABLE:softuni.departments</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/employees_projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../JavaDB/HibernateAndSpringData/IntroductionToHibernate/softuni_database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="49" lean-forward="true" selection-end-line="1587" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b51867ed-9654-4c7f-b678-94094952a702/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/employees">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/towns">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/departments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b51867ed-9654-4c7f-b678-94094952a702/schema/softuni/table/addresses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="32" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="method#editShorterTowns#0;class#Engine#0" />
+            <element signature="method#containsEmployee#0;class#Engine#0" />
+            <element signature="method#employeesWithHigherSalary#0;class#Engine#0" />
+            <element signature="method#employeesFromDepartment#0;class#Engine#0" />
+            <element signature="method#addingNewAddress#0;class#Engine#0" />
+            <element signature="method#addressEmployeeCount#0;class#Engine#0" />
+            <element signature="method#employeeWithProject#0;class#Engine#0" />
+            <element signature="method#findLatestProjects#0;class#Engine#0" />
+            <element signature="method#increaseSalary#0;class#Engine#0" />
+            <element signature="method#removeTown#0;class#Engine#0" />
+            <element signature="method#findEmployee#0;class#Engine#0" />
+            <element signature="method#maxSalaries#0;class#Engine#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Town.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>JPA</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>homeworkhibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
