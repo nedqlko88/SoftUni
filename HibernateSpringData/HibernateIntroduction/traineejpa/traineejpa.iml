@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <datasource-mapping>
+          <factory-entry name="department" value="e5d8c83b-29ea-4b0b-9233-49e436bd5bd9" />
+          <factory-entry name="employees" value="e5d8c83b-29ea-4b0b-9233-49e436bd5bd9" />
+          <factory-entry name="softuni" value="479e74ba-e001-4034-b742-4df5db28cb03" />
+        </datasource-mapping>
+        <naming-strategy-map />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+  </component>
+</module>
