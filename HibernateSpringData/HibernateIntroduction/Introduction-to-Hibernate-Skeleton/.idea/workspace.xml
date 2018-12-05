@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84f3803-0d99-40d4-b6bc-501b2b610850" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homeworkhibernate.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CustomORM/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CustomORM/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CustomORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CustomORM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CustomORM/src/main/java/com/ned/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CustomORM/src/main/java/com/ned/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Engine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Town.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/Town.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -291,7 +274,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543961137292" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543962198869" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -348,12 +331,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543937417813</updated>
-      <workItem from="1543937421146" duration="16739000" />
+      <workItem from="1543937421146" duration="16740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16739000" />
+    <option name="totallyTimeSpent" value="16740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -377,7 +360,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
