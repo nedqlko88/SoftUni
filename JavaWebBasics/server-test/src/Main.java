@@ -9,10 +9,11 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        int port = 8007;
+        ServerSocket serverSocket = new ServerSocket(port);
+        System.out.println("Listening on port: " + port);
 
-        ServerSocket serverSocket = new ServerSocket(8007);
-
-        String serverPath = "F:\\softUni\\server-test\\src\\resources";
+        String serverPath = "F:\\softUni\\Repository\\JavaWebBasics\\server-test\\src\\resources";
 
         while (true) {
             try {
@@ -51,15 +52,28 @@ public class Main {
                 System.out.println();
                 System.out.println(body);
 
-                // send response - zakomentareno, pravq si test i go vryshtam
-                out.write("HTTP/1.1 200 OK\r\n");
-                out.write("Content-Type: text/html\r\n");
-                out.write("Content-Disposition: attachment; filename=" + fileName.substring(1) + "\r\n");
-//                out.write("Content-Length: " + (new File(serverPath + fileName).length()) + "\r\n");
-                out.write("\r\n");
+                if (fileName.contains("favicon")) {
+                    continue;
+                }
 
-                List<String> content = Files.readAllLines(Paths.get(serverPath + fileName));
-                out.write(String.join("",content));
+                try {
+                    List<String> content = Files.readAllLines(Paths.get(serverPath + fileName));
+
+                    out.write("HTTP/1.1 200 OK\r\n");
+                    out.write("Content-Type: text/html\r\n");
+                    out.write("\r\n");
+                    out.write(String.join("", content));
+                } catch (IOException e) {
+                    out.write("HTTP/1.1 301 Moved Permanently\r\n");
+                    out.write("Content-Type: text/html\r\n");
+                    out.write("Location: pesho.html\r\n");
+                    out.write("\r\n");
+                }
+                // send response - zakomentareno, pravq si test i go vryshtam
+
+
+//                out.write("Content-Disposition: attachment; filename=" + fileName.substring(1) + "\r\n");
+//                out.write("Content-Length: " + (new File(serverPath + fileName).length()) + "\r\n");
 
 
 //                out.write(new Date().toString());
