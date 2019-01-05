@@ -1,4 +1,4 @@
-package org.ned.casebook.util;
+package org.ned.nedbook.util;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

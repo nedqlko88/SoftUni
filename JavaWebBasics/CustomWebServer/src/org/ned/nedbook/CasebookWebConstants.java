@@ -1,4 +1,4 @@
-package org.ned.casebook;
+package org.ned.nedbook;
 
 public final class CasebookWebConstants {
     public static final String CASEBOOK_SESSION_KEY = "CasebookSK";

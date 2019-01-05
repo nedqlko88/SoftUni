@@ -1,4 +1,4 @@
-package org.ned.casebook.util;
+package org.ned.nedbook.util;
 
 public final class MimeManager {
     private MimeManager() { }

@@ -12,7 +12,7 @@ import javax.persistence.Persistence;
 
 public abstract class BaseRepository {
     private static final EntityManagerFactory ENTITY_MANAGER_FACTORY =
-            Persistence.createEntityManagerFactory("casebook");
+            Persistence.createEntityManagerFactory("nedbook");
 
     private EntityTransaction entityTransaction;
 

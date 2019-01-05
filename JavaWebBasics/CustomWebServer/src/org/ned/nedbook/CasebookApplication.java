@@ -1,11 +1,11 @@
-package org.ned.casebook;
+package org.ned.nedbook;
 
-import org.ned.casebook.controllers.BaseController;
-import org.ned.casebook.controllers.HomeController;
-import org.ned.casebook.controllers.ResourceController;
-import org.ned.casebook.controllers.UserController;
-import org.ned.casebook.util.GetMapping;
-import org.ned.casebook.util.PostMapping;
+import org.ned.nedbook.controllers.BaseController;
+import org.ned.nedbook.controllers.HomeController;
+import org.ned.nedbook.controllers.ResourceController;
+import org.ned.nedbook.controllers.UserController;
+import org.ned.nedbook.util.GetMapping;
+import org.ned.nedbook.util.PostMapping;
 import org.ned.javache.api.RequestHandler;
 import org.ned.javache.http.*;
 

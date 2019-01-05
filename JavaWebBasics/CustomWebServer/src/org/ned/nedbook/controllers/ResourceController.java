@@ -1,6 +1,6 @@
-package org.ned.casebook.controllers;
+package org.ned.nedbook.controllers;
 
-import org.ned.casebook.util.MimeManager;
+import org.ned.nedbook.util.MimeManager;
 import org.ned.javache.WebConstants;
 import org.ned.javache.http.HttpRequest;
 import org.ned.javache.http.HttpResponse;

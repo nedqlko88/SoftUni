@@ -1,7 +1,7 @@
-package org.ned.casebook.controllers;
+package org.ned.nedbook.controllers;
 
-import org.ned.casebook.CasebookWebConstants;
-import org.ned.casebook.util.GetMapping;
+import org.ned.nedbook.CasebookWebConstants;
+import org.ned.nedbook.util.GetMapping;
 import org.ned.database.repositories.UserRepository;
 import org.ned.javache.http.HttpRequest;
 import org.ned.javache.http.HttpResponse;

@@ -1,6 +1,6 @@
 package org.ned;
 
-import org.ned.casebook.CasebookApplication;
+import org.ned.nedbook.CasebookApplication;
 import org.ned.javache.Server;
 import org.ned.javache.WebConstants;
 import org.ned.javache.api.RequestHandler;

@@ -1,6 +1,6 @@
-package org.ned.casebook.controllers;
+package org.ned.nedbook.controllers;
 
-import org.ned.casebook.CasebookWebConstants;
+import org.ned.nedbook.CasebookWebConstants;
 import org.ned.javache.WebConstants;
 import org.ned.javache.http.HttpResponse;
 import org.ned.javache.http.HttpStatus;
