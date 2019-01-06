@@ -20,12 +20,12 @@ public class Server {
 
     private ServerSocket server;
 
-    private Set<RequestHandler> requesthandlers;
+    private Set<RequestHandler> requestHandlers;
 
     public Server(int port, Set<RequestHandler> requestHandlers) {
         this.port = port;
         this.timeouts = 0;
-        this.requesthandlers = requestHandlers;
+        this.requestHandlers = requestHandlers;
     }
 
     public void run() throws IOException {
@@ -39,7 +39,7 @@ public class Server {
                 clientSocket.setSoTimeout(SOCKET_TIMEOUT_MILLISECONDS);
 
                 ConnectionHandler connectionHandler
-                        = new ConnectionHandler(clientSocket, this.requesthandlers);
+                        = new ConnectionHandler(clientSocket, this.requestHandlers);
 
                 FutureTask<?> task = new FutureTask<>(connectionHandler, null);
                 task.run();
