@@ -1,5 +1,6 @@
 <%@ page import="java.util.List" %>
-<%@ page import="ned.fdmc.data.Cat" %><%--
+<%@ page import="ned.fdmc.data.models.Cat" %>
+<%@ page import="ned.fdmc.data.repos.CatRepo" %><%--
   Created by IntelliJ IDEA.
   User: nedql
   Date: 07-Jan-19
@@ -13,9 +14,8 @@
 </head>
 <body>
 <%
-    List<Cat> cats = (List<Cat>) application.getAttribute("cats");
     String catName = request.getParameter("catName");
-    Cat cat = cats.stream().filter(x -> x.getName().equals(catName)).findFirst().orElse(null);
+    Cat cat = ((CatRepo)application.getAttribute("cats")).getCatByName(catName);
     if (cat != null) {
 %>
 <h1>Cat - <%=cat.getName()%></h1>
@@ -23,6 +23,7 @@
 <h2>Breed: <%=cat.getBreed()%></h2>
 <h2>Color: <%=cat.getColor()%></h2>
 <h2>Number of legs: <%=cat.getNumberOfLegs()%></h2>
+<h2>Cat Creator: <%=cat.getCreator().getUsername()%></h2>
 
 <%
     } else {

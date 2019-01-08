@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="nedqlko">
+    <output-path>$PROJECT_DIR$/out/artifacts/nedqlko</output-path>
+    <root id="archive" name="nedqlko.war">
+      <element id="javaee-facet-resources" facet="tomcat-server/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="tomcat-server" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

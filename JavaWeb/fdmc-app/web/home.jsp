@@ -9,7 +9,6 @@
         ? "<h3>Login if you have account, or Register if you don't have!</h3>"
         : "<h3>Navigate through the application using the links below!</h3>"
 %>
-<h3>Navigate through the application using the links below!</h3>
 <hr/>
 <%
     if (session.getAttribute("username") == null) {

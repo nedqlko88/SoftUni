@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ROOT" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34376a79-f7d3-4258-bdc4-f9884cc678b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ROOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ned/fdmc/servlets/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/casebook.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/StartUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/database/entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/database/repositories/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/database/repositories/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/database/util/RepositoryActionInvoker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/database/util/RepositoryActionResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/database/util/RepositoryActionResultImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/ConnectionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/WebConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/api/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpCookie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpCookieImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpRequestImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpResponseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpSessionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpSessionStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpSessionStorageImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/http/HttpStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/io/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/javache/io/Writer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/CasebookApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/CasebookWebConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/controllers/BaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/controllers/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/controllers/ResourceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/controllers/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/util/GetMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/util/MimeManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/nedbook/util/PostMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/assets/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/assets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/pages/friends.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/pages/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/pages/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/pages/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/CustomWebServer/src/org/ned/resources/pages/users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/resources/images/apple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/resources/images/banana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/resources/images/kiwi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/resources/images/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/cv.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/demoTraining.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/HTML_CSS_Bootstrap/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/out/production/server-test/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/out/production/server-test/resources/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/out/production/server-test/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/out/production/server-test/resources/pesho.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/server-test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/src/resources/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/src/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/server-test/src/resources/pesho.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/.idea/artifacts/nedqlko.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/src/main/java/NedServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/web/WEB-INF/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/web/gosho.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaWebBasics/tomcat-server/web/pesho.html" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ned/fdmc/servlets/HomeServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/ned/fdmc/servlets/ned.java" />
+        <option value="$PROJECT_DIR$/src/ned/fdmc/servlets/HomeServlet.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="false" />
+        <option name="checksumPolicy" value="FAIL" />
+        <option name="failureBehavior" value="FAST" />
+        <option name="localRepository" value="" />
+        <option name="mavenHome" value="" />
+        <option name="nonRecursive" value="false" />
+        <option name="outputLevel" value="INFO" />
+        <option name="pluginUpdatePolicy" value="DEFAULT" />
+        <option name="printErrorStackTraces" value="false" />
+        <option name="usePluginRegistry" value="false" />
+        <option name="userSettingsFile" value="" />
+        <option name="workOffline" value="false" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="false" />
+        <option name="createModulesForAggregators" value="true" />
+        <option name="dedicatedModuleDir" value="" />
+        <option name="downloadDocsAutomatically" value="false" />
+        <option name="downloadSourcesAutomatically" value="false" />
+        <option name="excludeTargetFolder" value="true" />
+        <option name="generatedSourcesFolder" value="AUTODETECT" />
+        <option name="importAutomatically" value="false" />
+        <option name="keepSourceFolders" value="true" />
+        <option name="lookForNested" value="false" />
+        <option name="updateFoldersOnImportPhase" value="process-resources" />
+        <option name="useMavenOutput" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-65" />
+    <option name="y" value="-8" />
+    <option name="width" value="1634" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fdmc-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmc-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdmc-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmc-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdmc-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmc-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ned" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdmc-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmc-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ned" type="462c0819:PsiDirectoryNode" />
+              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdmc-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmc-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ned" type="462c0819:PsiDirectoryNode" />
+              <item name="fdmc" type="462c0819:PsiDirectoryNode" />
+              <item name="servlets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdmc-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmc-app" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546796994415" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.14" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="ROOT">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_14_fdmc-app_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56806" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ROOT" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34376a79-f7d3-4258-bdc4-f9884cc678b7" name="Default Changelist" comment="" />
+      <created>1546796312143</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546796312143</updated>
+      <workItem from="1546796313573" duration="867000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="867000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ned/fdmc/servlets/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ROOT</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (fdmc-app)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>dom4jrrrrr</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>fdmc-app</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31152633" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
