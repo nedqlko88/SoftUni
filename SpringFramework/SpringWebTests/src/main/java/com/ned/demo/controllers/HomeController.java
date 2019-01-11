@@ -17,8 +17,15 @@ public class HomeController extends BaseController {
     }
 
     @GetMapping("/")
-    public ModelAndView index() {
-        return this.view("index.html");
+    public ModelAndView index(ModelAndView modelAndView) {
+        modelAndView.addObject("pesho", "Pecata");
+        return this.view("index", modelAndView);
+
+
+//        second way to do it
+//        modelAndView.setViewName("index");
+//        modelAndView.addObject("pesho", "Pecata");
+//        return modelAndView;
     }
 
     @PostMapping("/")

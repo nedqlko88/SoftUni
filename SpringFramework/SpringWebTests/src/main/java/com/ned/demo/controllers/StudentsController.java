@@ -1,6 +1,5 @@
 package com.ned.demo.controllers;
 
-import com.ned.demo.entities.Student;
 import com.ned.demo.models.binding.CreateStudentBindingModel;
 import com.ned.demo.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Set;
 
 @Controller
 @RequestMapping("/students")
