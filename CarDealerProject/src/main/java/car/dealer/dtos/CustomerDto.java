@@ -12,8 +12,6 @@ public class CustomerDto {
 
     private boolean isYoungDriver;
 
-    public CustomerDto() {
-    }
 
     public long getId() {
         return this.id;

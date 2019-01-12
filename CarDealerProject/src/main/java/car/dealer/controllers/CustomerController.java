@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
 import java.util.List;
 
 
 @Controller
+@RequestMapping("/customers")
 public class CustomerController {
 
     private final CustomerService customerService;
@@ -21,48 +21,24 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @GetMapping("/")
-    public ModelAndView index() {
+    @GetMapping("/all/ascending")
+    public ModelAndView getCustomersAscending(ModelAndView modelAndView) {
+        modelAndView.setViewName("customers/all");
+        List<CustomerDto> customersAsc = this.customerService.getAllCustomersOrderByBirthDateAscendingOrder();
+        modelAndView.addObject("customers", customersAsc);
+        modelAndView.addObject("order", "ascending");
 
-
-        return super.view("index", customers);
+        return modelAndView;
     }
 
-//    @GetMapping("/all/descending")
-//    public ModelAndView getAllDescendingOrder() {
-//        CustomersOrderDto customersOrderDto = new CustomersOrderDto();
-//        List<CustomerDto> customers = this.customerService.getAllCustomersOrderByBirthDateDescendingOrder();
-//        customersOrderDto.setCustomerDtos(customers);
-//        customersOrderDto.setOrder("descending");
-//        return super.view("views/customers/all", customersOrderDto);
-//    }
-//
-//    @GetMapping("/{id}")
-//    public ModelAndView getSalesByCustomer(@PathVariable(name = "id") long id) {
-//        SalesByCustomerDto salesByCustomerId = this.customerService.findSalesByCustomerId(id);
-//        return super.view("views/customers/sales", salesByCustomerId);
-//    }
-//
-//    @GetMapping("/add")
-//    public ModelAndView add() {
-//        return super.view("views/customers/add");
-//    }
-//
-//    @PostMapping("/add")
-//    public ModelAndView addConfirm(@ModelAttribute CreateCustomerDto createCustomerDto) {
-//        this.customerService.createCustomer(createCustomerDto);
-//        return super.redirect("/");
-//    }
-//
-//    @GetMapping("/edit/{id}")
-//    public ModelAndView edit(@PathVariable("id") Long id) {
-//        EditCustomerDto editCustomerDto = customerService.getCustomerById(id);
-//        return super.view("views/customers/edit", editCustomerDto);
-//    }
-//
-//    @PostMapping("/edit/{id}")
-//    public ModelAndView editConfirm(@ModelAttribute EditCustomerDto editCustomerDto, @PathVariable("id") Long id) {
-//        this.customerService.editCustomer(editCustomerDto, id);
-//        return super.redirect("/");
-//    }
+    @GetMapping("/all/descending")
+    public ModelAndView getCustomersDescending(ModelAndView modelAndView) {
+        modelAndView.setViewName("customers/all");
+        List<CustomerDto> customersDesc = this.customerService.getAllCustomersOrderByBirthDateDescendingOrder();
+        modelAndView.addObject("customers", customersDesc);
+        modelAndView.addObject("order", "descending");
+
+        return modelAndView;
+    }
+
 }

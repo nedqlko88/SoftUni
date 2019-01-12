@@ -8,11 +8,10 @@ import java.util.List;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
-    List<Customer> getCustomersByOrderByBirthDateAscYoungDriverAsc();
 
     List<Customer> getCustomersByOrderByBirthDateAsc();
 
     List<Customer> getCustomersByOrderByBirthDateDesc();
 
-    Customer getCustomerById(Long id);
+
 }

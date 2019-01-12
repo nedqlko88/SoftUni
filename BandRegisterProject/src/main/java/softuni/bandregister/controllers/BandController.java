@@ -15,7 +15,6 @@ import java.util.List;
 @Controller
 public class BandController {
     private final BandRepository bandRepository;
-
     @Autowired
     public BandController(BandRepository bandRepository) {
         this.bandRepository = bandRepository;

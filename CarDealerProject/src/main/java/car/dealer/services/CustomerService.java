@@ -10,7 +10,4 @@ public interface CustomerService {
 
     List<CustomerDto> getAllCustomersOrderByBirthDateDescendingOrder();
 
-    List<CustomerDto> getCustomersByOrderByBirthDateAscYoungDriverAsc();
-
-    CustomerDto getCustomerById(Long id);
 }

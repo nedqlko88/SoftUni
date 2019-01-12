@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <!--<link rel="stylesheet" href="bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="style.css">-->
+
+</head>
+<body>
+
+
+
+    <h1 th:text="|All customers in ${order} order|"></h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Birth date</th>
+            <th scope="col">Is young driver</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="customer : ${customers}" th:object="${customer}">
+            <tr>
+                <td th:text="*{getName()}"></td>
+                <td th:text="*{getBirthDate()}"></td>
+                <td th:if="*{isYoungDriver()}">
+                    <div th:text="yes"></div>
+                </td>
+                <td th:unless="*{isYoungDriver()}">
+                    <div th:text="no"></div>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+
+
+

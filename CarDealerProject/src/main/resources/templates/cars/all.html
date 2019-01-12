@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!--za da ni podskazva na th-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+</head>
+<body>
+
+<h1 th:text="|This is all cars of make: ${make}|"></h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Make</th>
+        <th scope="col">Model</th>
+        <th scope="col">Kilometers</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="car : ${cars}" th:object="${car}">
+        <tr>
+            <td th:text="*{getMake()}"></td>
+            <td th:text="*{getModel()}"></td>
+            <td th:text="*{getTravelled_distance()}">
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+
+
+</body>
+</html>

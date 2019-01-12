@@ -39,22 +39,4 @@ public class CustomerServiceImpl implements CustomerService {
         return customerDtos;
     }
 
-    @Override
-    public List<CustomerDto> getCustomersByOrderByBirthDateAscYoungDriverAsc() {
-
-//        CustomerDto customerDto = this.modelMapper.map(this.customerRepository.getOne(2L),CustomerDto.class);
-        List<CustomerDto> customerDtoList = new ArrayList<>();
-        this.customerRepository.
-                getCustomersByOrderByBirthDateAscYoungDriverAsc().
-                forEach(customer -> customerDtoList.add(this.modelMapper.map(customer, CustomerDto.class)));
-        return customerDtoList;
-    }
-
-    @Override
-    public CustomerDto getCustomerById(Long id) {
-        Customer customer = this.customerRepository.getOne(1L);
-
-        return this.modelMapper.map(customer, CustomerDto.class);
-    }
-
 }

@@ -37,9 +37,3 @@ public class Supplier extends BaseEntity {
     }
 }
 
-
-//    @ManyToOne
-//    @JoinColumn(referencedColumnName = "id", name = "supplier_id")
-//    public Supplier getSupplier() {
-//        return this.supplier;
-//    }

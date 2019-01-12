@@ -1,7 +1,5 @@
 package car.dealer.entities;
 
-import com.fasterxml.jackson.databind.ser.Serializers;
-
 import javax.persistence.*;
 import java.util.Set;
 
