@@ -1,8 +1,10 @@
 package car.dealer.controllers;
 
 
-import car.dealer.dtos.CustomerDto;
+import car.dealer.dtos.customers.CustomerDto;
+import car.dealer.dtos.customers.CustomerSalesDto;
 import car.dealer.services.CustomerService;
+import org.dom4j.rule.Mode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -37,6 +39,15 @@ public class CustomerController {
         List<CustomerDto> customersDesc = this.customerService.getAllCustomersOrderByBirthDateDescendingOrder();
         modelAndView.addObject("customers", customersDesc);
         modelAndView.addObject("order", "descending");
+
+        return modelAndView;
+    }
+
+    @GetMapping("/{id}")
+    public ModelAndView getSalesByCustomer(ModelAndView modelAndView, @PathVariable(name = "id") Long id) {
+        modelAndView.setViewName("customers/customer-sales");
+        CustomerSalesDto customer = this.customerService.getCustomerById(id);
+        modelAndView.addObject("customer", customer);
 
         return modelAndView;
     }

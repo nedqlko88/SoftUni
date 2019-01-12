@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customers</title>
+    <title>Suppliers</title>
     <link rel="stylesheet" href="/static/bootstrap.min.css">
     <!--<link rel="stylesheet" href="style.css">-->
 
@@ -13,26 +13,21 @@
 
 
 
-    <h1 th:text="|All customers in ${order} order|"></h1>
+    <h1 th:text="|All suppliers that are ${type}|"></h1>
     <table class="table">
         <thead>
         <tr>
+            <th scope="col">Id</th>
             <th scope="col">Name</th>
-            <th scope="col">Birth date</th>
-            <th scope="col">Is young driver</th>
+            <th scope="col">Number of parts</th>
         </tr>
         </thead>
         <tbody>
-        <th:block th:each="customer : ${customers}" th:object="${customer}">
+        <th:block th:each="supplier : ${suppliers}" th:object="${supplier}">
             <tr>
+                <td th:text="*{getId()}"></td>
                 <td th:text="*{getName()}"></td>
-                <td th:text="*{getBirthDate()}"></td>
-                <td th:if="*{isYoungDriver()}">
-                    <div th:text="yes"></div>
-                </td>
-                <td th:unless="*{isYoungDriver()}">
-                    <div th:text="no"></div>
-                </td>
+                <td th:text="*{getNumberOfParts()}">
             </tr>
         </th:block>
         </tbody>

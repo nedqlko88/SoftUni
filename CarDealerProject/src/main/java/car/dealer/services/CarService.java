@@ -8,4 +8,6 @@ import java.util.List;
 public interface CarService {
 
     List<CarDto> getAllCarsByMakeOrderedByModelAndKm(String make);
+
+    CarDto getCarById(Long id);
 }

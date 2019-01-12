@@ -3,10 +3,12 @@ package car.dealer.services;
 import car.dealer.dtos.SupplierDto;
 
 import java.util.List;
+import java.util.Set;
 
 public interface SupplierService {
-    List<SupplierDto> getAllSuppliersImporters();
+    Set<SupplierDto> getAllSuppliersByImporter(boolean isImporter);
 
-    List<SupplierDto> getAllSuppliersNotImporters();
+    Set<SupplierDto> getAllSuppliers();
+
 
 }

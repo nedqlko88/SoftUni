@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CarServiceImpl implements CarService {
@@ -33,4 +34,14 @@ public class CarServiceImpl implements CarService {
 
         return carDtos;
     }
+
+    @Override
+    public CarDto getCarById(Long id) {
+        Car car = this.carRepository.findById(id).get();
+
+        CarDto carDto = new CarDto();
+
+        return this.modelMapper.map(car, CarDto.class);
+    }
+
 }

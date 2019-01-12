@@ -3,29 +3,29 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <!--za da ni podskazva na th-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars</title>
+    <title>Car With Parts</title>
     <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <body>
 
-<h1 th:text="|This is all cars of make: ${make}|"></h1>
 
+<h1 th:text="|CAR: make: ${carById.getMake()}, model: ${carById.getModel()}, km: ${carById.getTravelled_distance()}|"></h1>
+<br>
+<br>
+<h1>PARTS:</h1>
 <table class="table">
     <thead>
     <tr>
-        <th scope="col">Make</th>
-        <th scope="col">Model</th>
-        <th scope="col">Kilometers</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
     </tr>
     </thead>
     <tbody>
-    <th:block th:each="car : ${cars}" th:object="${car}">
+    <th:block th:each="part : ${parts}" th:object="${part}">
         <tr>
-            <td th:text="*{getMake()}"></td>
-            <td th:text="*{getModel()}"></td>
-            <td th:text="*{getTravelled_distance()}">
+            <td th:text="*{getName()}"></td>
+            <td th:text="*{getPrice()}"></td>
         </tr>
     </th:block>
     </tbody>

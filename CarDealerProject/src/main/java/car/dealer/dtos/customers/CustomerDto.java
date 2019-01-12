@@ -1,7 +1,9 @@
-package car.dealer.dtos;
+package car.dealer.dtos.customers;
 
-import java.time.LocalDate;
+import car.dealer.dtos.SaleDto;
+
 import java.time.LocalDateTime;
+import java.util.Set;
 
 public class CustomerDto {
     private long id;
@@ -11,6 +13,10 @@ public class CustomerDto {
     private LocalDateTime birthDate;
 
     private boolean isYoungDriver;
+
+    private Set<SaleDto> sales;
+
+
 
 
     public long getId() {
@@ -43,5 +49,13 @@ public class CustomerDto {
 
     public void setYoungDriver(boolean youngDriver) {
         isYoungDriver = youngDriver;
+    }
+
+    public Set<SaleDto> getSales() {
+        return this.sales;
+    }
+
+    public void setSales(Set<SaleDto> sales) {
+        this.sales = sales;
     }
 }

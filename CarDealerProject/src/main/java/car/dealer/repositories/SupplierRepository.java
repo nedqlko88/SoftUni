@@ -8,8 +8,8 @@ import java.util.List;
 
 @Repository
 public interface SupplierRepository extends JpaRepository<Supplier, Long> {
-    List<Supplier> getSuppliersByImporterIsFalse();
 
-    List<Supplier> getSuppliersByImporterIsTrue();
+    List<Supplier> getSuppliersByImporter(boolean isImporter);
+
 
 }
